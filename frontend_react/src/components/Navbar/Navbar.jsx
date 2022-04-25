@@ -4,9 +4,10 @@ import { motion } from 'framer-motion'
 import './Navbar.scss'
 import { images } from '../../constants'
 
+export const sections = ['home', 'about', 'contact', 'work', 'skills', 'testimonial']
 const Navbar = () => {
   const [toggle, setToggle] = React.useState(false)
-  const sections = ['home', 'about', 'contact', 'work', 'skills', 'testimonial']
+  //const sections = ['home', 'about', 'contact', 'work', 'skills', 'testimonial']
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
