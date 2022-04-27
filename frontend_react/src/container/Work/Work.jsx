@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import './Work.scss'
 
-const Work = () => {
+const Work = (props) => {
   const [activeFilter, setActiveFilter] = React.useState('All')
   const [animateCard, setAnimateCard] = React.useState({ y: 0, opacity: 1 })
   const [works, setWorks] = useState([])
@@ -41,7 +41,6 @@ const Work = () => {
       <h2 className='head-text'>
         my creative <span>portfolio</span> section
       </h2>
-
       <div className='app__work-filter'>
         {['Web App', 'DApps', 'All'].map((item, index) => (
           <div
@@ -103,4 +102,6 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(
+  MotionWrap(Work, 'app__works')
+  , 'work', 'app__primarybg')
