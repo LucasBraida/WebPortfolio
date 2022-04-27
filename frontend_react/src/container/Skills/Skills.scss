@@ -42,7 +42,7 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: white;
+        background-color: var(--black-color);
         margin-bottom: 0.5rem;
 
         img{
@@ -51,7 +51,7 @@
         }
 
         &:hover{
-            box-shadow: 0 0 25px rgba($color: #fef4f5, $alpha: 1);
+            box-shadow: 0 0 25px var(--lightGray-color);
         }
 
         @media screen and (min-width: 2000px) {
@@ -100,12 +100,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
+
 }
 
 .app__skills-exp-works{
     flex: 1;
 
-    .app__skill-exp-work{
+    .app__skills-exp-work{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -139,11 +140,11 @@
 
 .skills-tooltip {
     max-width: 300px !important;
-    background-color: var(--white-color) !important;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+    background-color: var(--secondary-color) !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2) !important;
     border-radius: 5px !important;
     padding: 1rem !important;
-    color: var(--gray-color) !important;
+    color: var(--white-color) !important;
     text-align: center !important;
     line-height: 1.5 !important;
     opacity: 1 !important;
