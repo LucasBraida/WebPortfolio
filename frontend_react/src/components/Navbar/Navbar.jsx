@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import './Navbar.scss'
 import { images } from '../../constants'
 
-export const sections = ['home', 'about', 'work','skills', 'contact', 'testimonial']
+export const sections = ['home', 'about', 'work','skills', 'testimonial', 'contact']
 const Navbar = () => {
   const [toggle, setToggle] = React.useState(false)
   //const sections = ['home', 'about', 'contact', 'work', 'skills', 'testimonial']
