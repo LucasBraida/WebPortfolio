@@ -3,7 +3,7 @@ export default {
     title:'Testimonials',
     type: 'document',
     fields:[
-        { 
+        {
             name:'name',
             title:'Name',
             type: 'string'
@@ -14,13 +14,13 @@ export default {
             type:'string'
         },
         {
-            name:'imgurl',
+            name:'imgUrl',
             title:'ImgUrl',
             type: 'image',
             options: {
               hotspot: true,
             },
-        },  
+        },
         {
             name:'feedback',
             title:'Feedback',

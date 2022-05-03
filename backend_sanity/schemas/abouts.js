@@ -21,6 +21,16 @@ export default{
               hotspot: true,
             },
         },
-        
+        {
+            name:'title_PT',
+            title:'Title_PT',
+            type:'string'
+        },
+        {
+            name:'description_PT',
+            title:'Description_PT',
+            type:'string'
+        },
+
     ]
 }
