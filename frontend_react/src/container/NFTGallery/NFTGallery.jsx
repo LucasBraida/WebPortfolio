@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
-import './Work.scss'
+import './NFTGallery.scss'
 
-const Work = (props) => {
+const NFTGallery = (props) => {
   const [activeFilter, setActiveFilter] = React.useState('All')
   const [animateCard, setAnimateCard] = React.useState({ y: 0, opacity: 1 })
   const [works, setWorks] = useState([])
@@ -103,5 +103,5 @@ const Work = (props) => {
 }
 
 export default AppWrap(
-  MotionWrap(Work, 'app__works')
-  , 'work', 'app__primarybg')
+  MotionWrap(NFTGallery, 'app__works')
+  , 'nftGallery', 'app__primarybg')

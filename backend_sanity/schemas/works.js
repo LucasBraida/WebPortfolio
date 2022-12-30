@@ -1,3 +1,4 @@
+const tags = ['Web App', 'Backend', 'DApp', 'All']
 export default {
     name: 'works',
     title: 'Works',
@@ -33,17 +34,37 @@ export default {
         },
       },
    
+      // {
+      //   name: 'tags',
+      //   title: 'Tags',
+      //  type:'array',
+      //  of: [
+      //    {
+      //      name:'tag',
+      //      title:'Tag',
+      //      type:'string'
+      //    }
+      //  ]
+      // },
       {
         name: 'tags',
         title: 'Tags',
        type:'array',
-       of: [
-         {
-           name:'tag',
-           title:'Tag',
-           type:'string'
-         }
-       ]
+       of: [{type: 'string'}],
+       options: {
+        list: tags.map(tag => {
+          return {
+            title: tag,
+            value: tag
+          }
+        })
+        // list: [
+        //   {title: 'Web App', value: 'Web App'},
+        //   {title: 'DApp', value: 'DApp'},
+        //   {title: 'All', value: 'All'},
+        //   {title: 'Private Home', value: 'privateHome'}
+        // ]
+      }
       },
      
     ],
