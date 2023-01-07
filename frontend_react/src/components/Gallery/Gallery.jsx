@@ -42,7 +42,7 @@ const Work = (props) => {
         my creative <span>portfolio</span> section
       </h2>
       <div className='app__work-filter'>
-        {['Web App', 'Backend', 'DApp', 'All'].map((item, index) => (
+        {['Web App', 'DApp', 'All'].map((item, index) => (
           <div
             key={`work-${item}`}
             onClick={() => handleWorkFilter(item)}
@@ -68,7 +68,7 @@ const Work = (props) => {
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 2 }}
                 className="app__work-hover app__flex"
               >
-                {work.projectLink && <a href={work.projectLink} target="_blank" rel="noreferrer">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
 
                   <motion.div
                     whileInView={{opacity: 1}}
@@ -78,8 +78,8 @@ const Work = (props) => {
                   >
                     <AiFillEye />
                   </motion.div>
-                </a>}
-                {work.codeLink && <a href={work.codeLink} target="_blank" rel="noreferrer">
+                </a>
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{opacity: 1}}
                     whileHover={{ scale: [1, 0.80] }}
@@ -88,7 +88,7 @@ const Work = (props) => {
                   >
                     <AiFillGithub />
                   </motion.div>
-                </a>}
+                </a>
               </motion.div>
             </div>
             <div className='app__work-content app__flex'>

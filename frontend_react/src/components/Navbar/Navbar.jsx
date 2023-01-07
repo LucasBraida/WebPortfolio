@@ -4,15 +4,16 @@ import { motion } from 'framer-motion'
 import './Navbar.scss'
 import { images } from '../../constants'
 
-export const sections = ['home', 'about', 'work','nftGallery','skills', 'testimonial', 'contact']
+// export const sections = ['home', 'about', 'work','nftGallery','skills', 'testimonial', 'contact']
+export const sections = ['home', 'work','poknfts','skills', 'contact']
 const Navbar = () => {
   const [toggle, setToggle] = React.useState(false)
   //const sections = ['home', 'about', 'contact', 'work', 'skills', 'testimonial']
   return (
     <nav className='app__navbar'>
-      <div className='app__navbar-logo'>
+      {/* <div className='app__navbar-logo'>
         <img src={images.logo} alt='logo'></img>
-      </div>
+      </div> */}
       <ul className='app__navbar-links'>
         {sections.map((item) => (
           <li className='app__flex p-text' key={`link-${item}`}>

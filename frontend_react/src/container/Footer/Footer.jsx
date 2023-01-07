@@ -42,7 +42,7 @@ const Footer = () => {
       <div className='app__footer-cards'>
         <div className='app__footer-card'>
           <img src={images.email} alt='email' />
-          <a href='mailto:lucasbraidanazareth@gmail.com' className='p-text'>lucasbraidanazareth@gmail.com</a>
+          <a href='mailto:lucasbraidan@gmail.com' className='p-text'>lucasbraidan@gmail.com</a>
         </div>
         <div className='app__footer-card'>
           <img src={images.mobile} alt='mobile' />
@@ -59,7 +59,7 @@ const Footer = () => {
             <input className='p-text' type='email' placeholder='Your email' value={email} onChange={handleChangeInput} name='email' />
           </div>
           <div className='app__flex'>
-            <textarea className='p-text' placeholder='Your email' value={message} name='message' onChange={handleChangeInput} />
+            <textarea className='p-text' placeholder='Your Message' value={message} name='message' onChange={handleChangeInput} />
           </div>
           <button type='button' className='p-text' onClick={handleSubmit}>{loading ? "Sending" : 'Send Message'}</button>
         </div>

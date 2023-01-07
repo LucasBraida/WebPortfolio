@@ -35,6 +35,15 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import opensea from '../assets/opensea.png'
+import opensea_white from '../assets/opensea_white.png'
+
+import vmware from '../assets/vmware.png'
+import vsphere from '../assets/vsphere.png'
+
+import linux from '../assets/linux.png'
+import solidity from '../assets/solidity.png'
+
 export default {
   email,
   mobile,
@@ -69,4 +78,10 @@ export default {
   nb,
   skype,
   spotify,
+  opensea,
+  opensea_white,
+  vmware,
+  vsphere,
+  linux,
+  solidity,
 };
